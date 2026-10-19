@@ -1,0 +1,26 @@
+# 构建产物与缓存
+.build/
+bin/
+build/bin/
+.tools/
+frontend/dist/
+installer/dist/
+
+# 前端
+frontend/node_modules/
+
+# 内嵌前端产物：只保留占位 index.html（未构建前端时保证 go build 可过）
+internal/webui/dist/*
+!internal/webui/dist/index.html
+
+# IDE / 系统
+.idea/
+.vscode/
+*.user
+Thumbs.db
+.DS_Store
+
+# 本地敏感配置（密钥路径等）
+configs/asc-config.local.json
+*.p8
+testdata/

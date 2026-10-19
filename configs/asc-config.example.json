@@ -1,0 +1,8 @@
+{
+  "keyFile": "C:/keys/AuthKey_XXXXXXXXXX.p8",
+  "keyId": "XXXXXXXXXX",
+  "issuerId": "11111111-2222-3333-4444-555555555555",
+  "appId": "1234567890",
+  "apiBase": "https://api.appstoreconnect.apple.com",
+  "keyType": "team"
+}

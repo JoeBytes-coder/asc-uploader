@@ -1,0 +1,8 @@
+{
+  "$schema": "https://wails.io/schemas/config.v2.json",
+  "name": "asc-uploader-gui",
+  "outputfilename": "asc-uploader-ui",
+  "frontend:install": "",
+  "frontend:build": "",
+  "frontend:dev:watcher": "pnpm dev"
+}

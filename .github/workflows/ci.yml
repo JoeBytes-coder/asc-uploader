@@ -14,10 +14,12 @@ jobs:
         with:
           go-version-file: go.mod
           cache: true
+      # 根目录 main.go 是 Windows 专用 GUI（Wails + syscall/user32），
+      # Linux runner 上只校验跨平台包；GUI 由 release.yml 在 windows-latest 构建。
       - name: Vet
-        run: go vet ./...
+        run: go vet ./internal/... ./cmd/... ./test/...
       - name: Test (race)
-        run: go test -race ./...
+        run: go test -race ./internal/... ./test/...
 
   frontend:
     runs-on: ubuntu-latest
